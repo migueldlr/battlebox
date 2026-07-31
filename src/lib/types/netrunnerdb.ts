@@ -46,6 +46,8 @@ export interface DecklistAttributes {
 	follows_basic_deckbuilding_rules: boolean;
 	identity_card_id: string;
 	name: string;
+	nickname: string | null;
+	tagline: string | null;
 	notes: string | null;
 	tags: string[] | null;
 	side_id: string;

@@ -19,9 +19,16 @@
 	});
 </script>
 
-<h1>The Netrunner Core Battle Box</h1>
+<h1 class="mb-2">The Netrunner Core Battle Box</h1>
+<p class="mb-4 text-muted-foreground">
+	Originally created by <a
+		href="https://cardgamer.com/features/introducing-the-netrunner-core-battle-box/"
+		target="_blank">lunari</a
+	>
+</p>
 
-<Carousel.Root setApi={(emblaApi) => (api = emblaApi)} opts={{ loop: true }} class="mb-4">
+<h3 class="mb-1">Choose a deck:</h3>
+<Carousel.Root setApi={(emblaApi) => (api = emblaApi)} opts={{ loop: true }} class="-mx-2 mb-4">
 	<Carousel.Content>
 		{#each data.decklistData as { attributes, cards }, index (attributes.name)}
 			<Carousel.Item
@@ -37,7 +44,12 @@
 </Carousel.Root>
 
 <section class="decklist">
-	<h3>{selectedDecklist.attributes.name}</h3>
+	<h3>
+		<span style={`color: var(--${selectedDecklist.attributes.faction_id}-color)`}
+			>{selectedDecklist.attributes.nickname}</span
+		>
+		- {selectedDecklist.attributes.tagline}
+	</h3>
 	{#if selectedDecklist.attributes.notes}
 		<div class="notes">{@html selectedDecklist.attributes.notes}</div>
 	{/if}
