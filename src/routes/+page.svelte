@@ -21,7 +21,7 @@
 
 <h1>The Netrunner Core Battle Box</h1>
 
-<Carousel.Root setApi={(emblaApi) => (api = emblaApi)} opts={{ loop: true }}>
+<Carousel.Root setApi={(emblaApi) => (api = emblaApi)} opts={{ loop: true }} class="mb-4">
 	<Carousel.Content>
 		{#each data.decklistData as { attributes, cards }, index (attributes.name)}
 			<Carousel.Item
@@ -36,19 +36,17 @@
 	</Carousel.Content>
 </Carousel.Root>
 
-{#if selectedDecklist}
-	<section class="decklist">
-		<h3>{selectedDecklist.attributes.name}</h3>
-		{#if selectedDecklist.attributes.notes}
-			<div class="notes">{@html selectedDecklist.attributes.notes}</div>
-		{/if}
-		<div class="card-grid">
-			{#each selectedDecklist.cards.filter((card) => card.id !== selectedDecklist.attributes.identity_card_id) as card (card.id)}
-				<CardImage {card} />
-			{/each}
-		</div>
-	</section>
-{/if}
+<section class="decklist">
+	<h3>{selectedDecklist.attributes.name}</h3>
+	{#if selectedDecklist.attributes.notes}
+		<div class="notes">{@html selectedDecklist.attributes.notes}</div>
+	{/if}
+	<div class="card-grid">
+		{#each selectedDecklist.cards.filter((card) => card.id !== selectedDecklist.attributes.identity_card_id) as card (card.id)}
+			<CardImage {card} />
+		{/each}
+	</div>
+</section>
 
 <style>
 	.card-grid {
