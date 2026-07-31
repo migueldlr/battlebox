@@ -54,6 +54,7 @@
 		/* Scroll when the card and note are taller than the screen. */
 		overflow-y: auto;
 		overscroll-behavior: contain;
+		outline: none;
 	}
 
 	.card-modal::backdrop {
@@ -78,6 +79,9 @@
 		border-radius: 4.55% / 3.5%;
 		box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 		cursor: pointer;
+		/* The image is a click-to-close target, not a keyboard target. Drop the tap ring. */
+		outline: none;
+		-webkit-tap-highlight-color: transparent;
 	}
 
 	/* Make the card smaller when a note is shown, so both fit on screen. */
