@@ -7,7 +7,16 @@
 </script>
 
 {#if unicode !== undefined}
-	<span class="netrunner-symbol {faction} {className}" title={faction}>
+	<span class="netrunner-symbol {faction} {className} font-normal" title={faction}>
 		{@html `&#${unicode};`}
 	</span>
 {/if}
+
+<style>
+	.netrunner-symbol {
+		font-family: 'Netrunner', monospace;
+		line-height: 1;
+		position: relative;
+		top: 0.08em;
+	}
+</style>

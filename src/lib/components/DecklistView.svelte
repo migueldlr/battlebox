@@ -22,8 +22,12 @@
 		cards.filter((card) => !card.card?.attributes.card_type_id.includes('identity'))
 	);
 
+	const sortedByFrequency = $derived(
+		[...nonIdentityCards].sort((a, b) => b.count - a.count)
+	);
+
 	const groupedCards = $derived(
-		nonIdentityCards.reduce(
+		sortedByFrequency.reduce(
 			(acc, card) => {
 				const type = card.card?.attributes.card_type_id;
 				if (!acc[type]) {
@@ -50,30 +54,35 @@
 		>Open</button
 	>
 	{#if open}
-		<div class="decklist-view-content">
-			<p class="mb-2 text-muted-foreground">
+		<div class="decklist-view-content bg-neutral-800 p-4">
+			<table class="mb-2 w-full">
+				<tbody>
+					{#each sortedGroupedCards as [type, cards], i}
+						<tr class="text-muted-foreground capitalize">
+							<th colspan="2" class="text-left {i > 0 ? 'pt-2' : ''}"
+								>{type} ({cards.reduce((acc, card) => acc + card.count, 0)})</th
+							></tr
+						>
+						{#each cards as cardData}
+							{@const count = cardData.count}
+							{@const card = cardData.card}
+							<tr>
+								<td class="py-1 text-muted-foreground">{count}x</td>
+								<td class="py-1"
+									>{card?.attributes.title} <InfluencePips {card} {count} {idFaction} /></td
+								>
+							</tr>
+						{/each}
+					{/each}
+				</tbody>
+			</table>
+
+			<p>
 				View the original list on <a
 					href={`https://netrunnerdb.com/en/decklist/${decklist.id}`}
 					target="_blank">NRDB</a
 				>
 			</p>
-			<ul class="grid gap-2">
-				{#each sortedGroupedCards as [type, cards]}
-					<li class="text-lg font-bold">
-						{type} ({cards.reduce((acc, card) => acc + card.count, 0)})
-					</li>
-					{#each cards as cardData}
-						{@const count = cardData.count}
-						{@const card = cardData.card}
-						<li>
-							<span class="text-sm text-muted-foreground">{count}x</span>
-							<CardImage class="inline-block h-4 w-auto" {card} />
-							{card?.attributes.title}
-							<InfluencePips {card} {count} {idFaction} />
-						</li>
-					{/each}
-				{/each}
-			</ul>
 		</div>
 	{/if}
 </div>
