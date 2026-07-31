@@ -8,7 +8,7 @@
 	import { openCardModal } from './card-modal/cardModalState.svelte';
 	let { decklist, allCards }: { decklist: Decklist; allCards: Record<string, Card> } = $props();
 
-	let open = $state(false);
+	let open = $state(true);
 
 	const idFaction = $derived(decklist.attributes.faction_id);
 
@@ -23,9 +23,7 @@
 		cards.filter((card) => !card.card?.attributes.card_type_id.includes('identity'))
 	);
 
-	const sortedByFrequency = $derived(
-		[...nonIdentityCards].sort((a, b) => b.count - a.count)
-	);
+	const sortedByFrequency = $derived([...nonIdentityCards].sort((a, b) => b.count - a.count));
 
 	const groupedCards = $derived(
 		sortedByFrequency.reduce(
@@ -46,13 +44,17 @@
 			(a, b) => CARD_TYPE_ORDER.indexOf(a[0]) - CARD_TYPE_ORDER.indexOf(b[0])
 		)
 	);
-
 </script>
 
 <div class="decklist-view">
-	<button type="button" class="w-full bg-white p-2 text-black" onclick={() => (open = !open)}
-		>Open</button
+	<button
+		type="button"
+		class="w-full cursor-pointer bg-white p-2 text-black"
+		onclick={() => (open = !open)}
 	>
+		{open ? 'Hide Decklist' : 'Show Decklist'}
+	</button>
+
 	{#if open}
 		<div class="decklist-view-content bg-neutral-800 p-4">
 			<table class="mb-2 w-full">
@@ -73,7 +75,8 @@
 											type="button"
 											class="card-link"
 											onclick={() => openCardModal(card)}>{card.attributes.title}</button
-										>{/if} <InfluencePips {card} {count} {idFaction} /></td
+										>{/if}
+									<InfluencePips {card} {count} {idFaction} /></td
 								>
 							</tr>
 						{/each}

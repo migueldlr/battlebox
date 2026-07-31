@@ -7,7 +7,10 @@
 	import { cards as allCards } from '$lib/types/cards';
 	import FactionIcon from '$lib/icons/FactionIcon.svelte';
 	import CardModal from '$lib/components/card-modal/CardModal.svelte';
-	import { openCardModal, cardByPrintingId } from '$lib/components/card-modal/cardModalState.svelte';
+	import {
+		openCardModal,
+		cardByPrintingId
+	} from '$lib/components/card-modal/cardModalState.svelte';
 
 	// NRDB notes are raw HTML with links like <a href="/en/card/30034">. Intercept
 	// clicks on those and open the card modal instead of navigating away.
@@ -42,7 +45,7 @@
 	Originally created by <a
 		href="https://cardgamer.com/features/introducing-the-netrunner-core-battle-box/"
 		target="_blank">lunari</a
-	>
+	>, additions by <a href="https://makers-eye.com/" target="_blank">spiderbro</a>
 </p>
 
 <Carousel.Root
@@ -65,7 +68,7 @@
 </Carousel.Root>
 
 <section class="decklist">
-	<h3>
+	<h3 class="mb-2">
 		<FactionIcon faction={selectedDecklist.attributes.faction_id} />
 		{selectedDecklist.attributes.nickname}
 		- {selectedDecklist.attributes.tagline}

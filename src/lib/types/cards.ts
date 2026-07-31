@@ -102,7 +102,8 @@ export const cards: Record<string, Card> = {
 			card_type_id: 'hardware',
 			influence_cost: 3,
 			latest_printing_id: '35006',
-			card_cycle_ids: ['elevation']
+			card_cycle_ids: ['elevation'],
+			notes: 'Some extra MU and some draw, be careful to not lose important cards to the trash step'
 		}
 	},
 	botulus: {
@@ -198,7 +199,8 @@ export const cards: Record<string, Card> = {
 			card_type_id: 'event',
 			influence_cost: 2,
 			latest_printing_id: '35014',
-			card_cycle_ids: ['elevation']
+			card_cycle_ids: ['elevation'],
+			notes: 'Careful to not run a Spin Doctor, could cause the run to be unsuccessful'
 		}
 	},
 	clearinghouse: {
@@ -234,7 +236,8 @@ export const cards: Record<string, Card> = {
 			card_type_id: 'event',
 			influence_cost: 2,
 			latest_printing_id: '30020',
-			card_cycle_ids: ['system_gateway']
+			card_cycle_ids: ['system_gateway'],
+			notes: 'Net 4c is excellent, try to play this last click!'
 		}
 	},
 	devadatta_drone: {
@@ -402,7 +405,9 @@ export const cards: Record<string, Card> = {
 			card_type_id: 'agenda',
 			influence_cost: null,
 			latest_printing_id: '35070',
-			card_cycle_ids: ['elevation']
+			card_cycle_ids: ['elevation'],
+			notes:
+				'You can install and score this in a single turn. Also, not only does this trigger your ID on score, it also triggers when you forfeit it for Biawak (and makes the Biawak rez free!)'
 		}
 	},
 	hansei_review: {
@@ -790,7 +795,9 @@ export const cards: Record<string, Card> = {
 			card_type_id: 'agenda',
 			influence_cost: null,
 			latest_printing_id: '35071',
-			card_cycle_ids: ['elevation']
+			card_cycle_ids: ['elevation'],
+			notes:
+				'The "Dividends" text on this isn\'t super worth it, just advance three times and get your two points'
 		}
 	},
 	offworld_office: {
@@ -1007,7 +1014,8 @@ export const cards: Record<string, Card> = {
 			card_type_id: 'event',
 			influence_cost: 2,
 			latest_printing_id: '35026',
-			card_cycle_ids: ['elevation']
+			card_cycle_ids: ['elevation'],
+			notes: 'Play this first click!!'
 		}
 	},
 	sang_kancil: {
@@ -1115,7 +1123,8 @@ export const cards: Record<string, Card> = {
 			card_type_id: 'event',
 			influence_cost: 0,
 			latest_printing_id: '30030',
-			card_cycle_ids: ['system_gateway', 'system_core_2019', 'revised_core_set', 'core_set']
+			card_cycle_ids: ['system_gateway', 'system_core_2019', 'revised_core_set', 'core_set'],
+			notes: 'No notes, just good money'
 		}
 	},
 	syailendra: {
@@ -1139,7 +1148,8 @@ export const cards: Record<string, Card> = {
 			card_type_id: 'hardware',
 			influence_cost: 0,
 			latest_printing_id: '30031',
-			card_cycle_ids: ['system_gateway']
+			card_cycle_ids: ['system_gateway'],
+			notes: "The handsize isn't critical, so only install for extra MU when you need it"
 		}
 	},
 	telework_contract: {
@@ -1262,8 +1272,7 @@ export const cards: Record<string, Card> = {
 			influence_cost: 0,
 			latest_printing_id: '30034',
 			card_cycle_ids: ['system_gateway'],
-			notes:
-				'MVP of the Topan deck. Hard mull for this - it lets you churn through your deck fast to build the rig.'
+			notes: 'Hard mull for this'
 		}
 	},
 	whitespace: {
@@ -1287,7 +1296,9 @@ export const cards: Record<string, Card> = {
 			card_type_id: 'event',
 			influence_cost: 1,
 			latest_printing_id: '30002',
-			card_cycle_ids: ['system_gateway']
+			card_cycle_ids: ['system_gateway'],
+			notes:
+				"If the corp is smart they'll give you the money, but if you play this last click you might end up drawing and discarding a ton."
 		}
 	}
 };
