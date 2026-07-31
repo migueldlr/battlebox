@@ -5,6 +5,7 @@
 	import InfluencePips from './InfluencePips.svelte';
 	import FactionIcon from '$lib/icons/FactionIcon.svelte';
 	import CardImage from './ui/card-image/card-image.svelte';
+	import { openCardModal } from './card-modal/cardModalState.svelte';
 	let { decklist, allCards }: { decklist: Decklist; allCards: Record<string, Card> } = $props();
 
 	let open = $state(false);
@@ -46,7 +47,6 @@
 		)
 	);
 
-	$inspect(sortedGroupedCards);
 </script>
 
 <div class="decklist-view">
@@ -69,7 +69,11 @@
 							<tr>
 								<td class="py-1 text-muted-foreground">{count}x</td>
 								<td class="py-1"
-									>{card?.attributes.title} <InfluencePips {card} {count} {idFaction} /></td
+									>{#if card}<button
+											type="button"
+											class="card-link"
+											onclick={() => openCardModal(card)}>{card.attributes.title}</button
+										>{/if} <InfluencePips {card} {count} {idFaction} /></td
 								>
 							</tr>
 						{/each}
@@ -86,3 +90,23 @@
 		</div>
 	{/if}
 </div>
+
+<style>
+	.card-link {
+		background: none;
+		border: none;
+		padding: 0;
+		font: inherit;
+		color: inherit;
+		cursor: pointer;
+		text-align: left;
+		text-decoration: underline;
+		text-decoration-thickness: 1px;
+		text-underline-offset: 2px;
+		text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+	}
+
+	.card-link:hover {
+		text-decoration-color: currentColor;
+	}
+</style>

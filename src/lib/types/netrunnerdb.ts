@@ -3,19 +3,9 @@
 // The app no longer fetches from the API; it ships this data statically.
 // See https://api.netrunnerdb.com/api/v3/public/
 
-// The art tiers that the NRDB image CDN serves for a printing.
-// tiny, small, medium, and large are jpgs. Every card record has them.
-// xlarge and narrative are webps. Only NSG-era printings have them.
-// The API does not send the missing keys. Each field is optional. The caller must
-// handle a missing field.
-export interface NrdbImageSet {
-	tiny?: string;
-	small?: string;
-	medium?: string;
-	large?: string;
-	xlarge?: string;
-	narrative?: string;
-}
+// The image tiers the NRDB CDN serves for a printing. We store the tier names only.
+// cardImageUrl in utils.ts builds each URL from the printing id.
+export type CardImageTier = 'tiny' | 'small' | 'medium' | 'large' | 'xlarge' | 'narrative';
 
 /** The `attributes` object of a card resource. Lists only the fields that this app uses. */
 export interface CardAttributes {
@@ -29,9 +19,10 @@ export interface CardAttributes {
 	influence_cost: number | null;
 	latest_printing_id: string;
 	card_cycle_ids: string[];
-	latest_printing_images: {
-		nrdb_classic: NrdbImageSet;
-	};
+	/** True when this printing has a wide "narrative" art variant. Most cards omit it. */
+	has_narrative?: boolean;
+	/** A custom note for this card. Shown under the card image in the modal. */
+	notes?: string;
 }
 
 /** One card resource object. */

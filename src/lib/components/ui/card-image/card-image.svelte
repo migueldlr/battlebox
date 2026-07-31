@@ -8,7 +8,6 @@
 		class?: string;
 		boxShadow?: boolean;
 		hasTransition?: boolean;
-		responsive?: boolean;
 	}
 
 	const {
@@ -16,38 +15,21 @@
 		loading = 'lazy',
 		class: className = '',
 		boxShadow = true,
-		hasTransition = false,
-		responsive = false
+		hasTransition = false
 	}: Props = $props();
 
 	const title = $derived(card.attributes.title ?? 'Card image');
 </script>
 
-{#if responsive}
-	<picture>
-		<source srcset={getHighResImage(card, 'small')} type="image/jpeg" media="(max-width:936px)" />
-		<source srcset={getHighResImage(card, 'large')} type="image/jpeg" media="(min-width:936px)" />
-		<img
-			crossorigin="anonymous"
-			class="card {className}"
-			class:shadow={boxShadow}
-			src={getHighResImage(card)}
-			alt={title}
-			{loading}
-			style:view-transition-name={hasTransition ? `card-${card.id}` : ''}
-		/>
-	</picture>
-{:else}
-	<img
-		crossorigin="anonymous"
-		class="card {className}"
-		class:shadow={boxShadow}
-		src={getHighResImage(card)}
-		alt={title}
-		{loading}
-		style:view-transition-name={hasTransition ? `card-${card.id}` : ''}
-	/>
-{/if}
+<img
+	crossorigin="anonymous"
+	class="card {className}"
+	class:shadow={boxShadow}
+	src={getHighResImage(card)}
+	alt={title}
+	{loading}
+	style:view-transition-name={hasTransition ? `card-${card.id}` : ''}
+/>
 
 <style>
 	img.card {

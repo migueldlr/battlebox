@@ -6,6 +6,21 @@
 	import DecklistView from '$lib/components/DecklistView.svelte';
 	import { cards as allCards } from '$lib/types/cards';
 	import FactionIcon from '$lib/icons/FactionIcon.svelte';
+	import CardModal from '$lib/components/card-modal/CardModal.svelte';
+	import { openCardModal, cardByPrintingId } from '$lib/components/card-modal/cardModalState.svelte';
+
+	// NRDB notes are raw HTML with links like <a href="/en/card/30034">. Intercept
+	// clicks on those and open the card modal instead of navigating away.
+	function handleNotesClick(e: MouseEvent) {
+		const anchor = (e.target as HTMLElement).closest('a');
+		if (!anchor) return;
+		const match = anchor.getAttribute('href')?.match(/\/card\/(\d+)/);
+		if (!match) return;
+		const card = cardByPrintingId(match[1]);
+		if (!card) return;
+		e.preventDefault();
+		openCardModal(card);
+	}
 
 	let { data }: { data: PageData } = $props();
 
@@ -57,9 +72,12 @@
 	</h3>
 	<DecklistView decklist={selectedDecklist} {allCards} />
 	{#if selectedDecklist.attributes.notes}
-		<div class="notes">{@html selectedDecklist.attributes.notes}</div>
+		<!-- svelte-ignore a11y_no_static_element_interactions, a11y_click_events_have_key_events -->
+		<div class="notes" onclick={handleNotesClick}>{@html selectedDecklist.attributes.notes}</div>
 	{/if}
 </section>
+
+<CardModal />
 
 <style>
 	.notes {
