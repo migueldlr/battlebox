@@ -1,4 +1,6 @@
-// Types for the NetrunnerDB API v3. The API uses the JSON:API format.
+// Shapes for the bundled card and decklist data. These mirror the NetrunnerDB API v3
+// records (JSON:API format) that the data in cards.ts and decklists.ts was sourced from.
+// The app no longer fetches from the API; it ships this data statically.
 // See https://api.netrunnerdb.com/api/v3/public/
 
 // The art tiers that the NRDB image CDN serves for a printing.
@@ -20,6 +22,11 @@ export interface CardAttributes {
 	title: string;
 	faction_id: string;
 	card_type_id: string;
+	/**
+	 * The card's printed influence cost (out-of-faction "pips"). `null` for cards that
+	 * have no influence value at all, such as agendas and identities.
+	 */
+	influence_cost: number | null;
 	latest_printing_id: string;
 	card_cycle_ids: string[];
 	latest_printing_images: {
@@ -27,17 +34,11 @@ export interface CardAttributes {
 	};
 }
 
-/** One card resource object. The cards endpoint returns this. */
+/** One card resource object. */
 export interface Card {
 	id: string;
 	type: 'cards';
 	attributes: CardAttributes;
-}
-
-/** The response from the decklist's related cards link. It holds a list of card resources. */
-export interface CardListResponse {
-	data: Card[];
-	meta: Record<string, unknown>;
 }
 
 /** The `attributes` object of a decklist resource. */
@@ -58,19 +59,4 @@ export interface DecklistAttributes {
 	card_slots: Record<string, number>;
 	num_cards: number;
 	influence_spent: number;
-}
-
-/** One decklist resource object. */
-export interface DecklistResource {
-	id: string;
-	type: 'decklists';
-	attributes: DecklistAttributes;
-	relationships: Record<string, { links: { related: string } }>;
-	links: { self: string };
-}
-
-/** The top-level response from `GET /decklists/{id}`. */
-export interface DecklistResponse {
-	data: DecklistResource;
-	meta: Record<string, unknown>;
 }

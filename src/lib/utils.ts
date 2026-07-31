@@ -11,6 +11,18 @@ export const NRDB_IMAGE_URL = 'https://card-images.netrunnerdb.com/v2';
 // Cycles from Null Signal Games. These cycles have hi-res xlarge webp art.
 const NSG_CARD_CYCLES = ['elevation', 'liberation', 'borealis', 'ashes', 'system_gateway'];
 
+export const CARD_TYPE_ORDER = [
+	'agenda',
+	'asset',
+	'operation',
+	'upgrade',
+	'ice',
+	'event',
+	'hardware',
+	'resource',
+	'program'
+];
+
 /**
  * Get one image URL for a card at the given tier.
  * For an NSG-cycle card, use the NSG hi-res webp.

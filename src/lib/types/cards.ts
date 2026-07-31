@@ -13,6 +13,7 @@ export const cards: Record<string, Card> = {
 			title: 'Above the Law',
 			faction_id: 'weyland_consortium',
 			card_type_id: 'agenda',
+			influence_cost: null,
 			latest_printing_id: '30060',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -33,6 +34,7 @@ export const cards: Record<string, Card> = {
 			title: 'Anoetic Void',
 			faction_id: 'jinteki',
 			card_type_id: 'upgrade',
+			influence_cost: 4,
 			latest_printing_id: '30050',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -53,6 +55,7 @@ export const cards: Record<string, Card> = {
 			title: 'Ansel 1.0',
 			faction_id: 'haas_bioroid',
 			card_type_id: 'ice',
+			influence_cost: 3,
 			latest_printing_id: '30038',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -73,6 +76,7 @@ export const cards: Record<string, Card> = {
 			title: 'Anthill Excavation Contract',
 			faction_id: 'weyland_consortium',
 			card_type_id: 'asset',
+			influence_cost: 2,
 			latest_printing_id: '35072',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -93,6 +97,7 @@ export const cards: Record<string, Card> = {
 			title: 'Azimat',
 			faction_id: 'shaper',
 			card_type_id: 'program',
+			influence_cost: 1,
 			latest_printing_id: '35029',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -113,6 +118,7 @@ export const cards: Record<string, Card> = {
 			title: 'Biawak',
 			faction_id: 'weyland_consortium',
 			card_type_id: 'ice',
+			influence_cost: 3,
 			latest_printing_id: '35074',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -133,6 +139,7 @@ export const cards: Record<string, Card> = {
 			title: 'Bigger Picture',
 			faction_id: 'nbn',
 			card_type_id: 'operation',
+			influence_cost: 2,
 			latest_printing_id: '35065',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -153,6 +160,7 @@ export const cards: Record<string, Card> = {
 			title: 'Bling',
 			faction_id: 'anarch',
 			card_type_id: 'hardware',
+			influence_cost: 3,
 			latest_printing_id: '35006',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -173,6 +181,7 @@ export const cards: Record<string, Card> = {
 			title: 'Botulus',
 			faction_id: 'anarch',
 			card_type_id: 'program',
+			influence_cost: 3,
 			latest_printing_id: '30004',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -193,6 +202,7 @@ export const cards: Record<string, Card> = {
 			title: 'Brân 1.0',
 			faction_id: 'haas_bioroid',
 			card_type_id: 'ice',
+			influence_cost: 2,
 			latest_printing_id: '30039',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -213,6 +223,7 @@ export const cards: Record<string, Card> = {
 			title: 'Bumi 1.0',
 			faction_id: 'haas_bioroid',
 			card_type_id: 'ice',
+			influence_cost: 1,
 			latest_printing_id: '35041',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -233,6 +244,7 @@ export const cards: Record<string, Card> = {
 			title: 'Buzzsaw',
 			faction_id: 'anarch',
 			card_type_id: 'program',
+			influence_cost: 1,
 			latest_printing_id: '30005',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -253,6 +265,7 @@ export const cards: Record<string, Card> = {
 			title: 'Byte!',
 			faction_id: 'jinteki',
 			card_type_id: 'asset',
+			influence_cost: 2,
 			latest_printing_id: '35050',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -273,6 +286,7 @@ export const cards: Record<string, Card> = {
 			title: 'Carmen',
 			faction_id: 'criminal',
 			card_type_id: 'program',
+			influence_cost: 2,
 			latest_printing_id: '30015',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -293,6 +307,7 @@ export const cards: Record<string, Card> = {
 			title: 'Chromatophores',
 			faction_id: 'shaper',
 			card_type_id: 'program',
+			influence_cost: 2,
 			latest_printing_id: '35030',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -313,6 +328,7 @@ export const cards: Record<string, Card> = {
 			title: 'Clean Getaway',
 			faction_id: 'criminal',
 			card_type_id: 'event',
+			influence_cost: 2,
 			latest_printing_id: '35014',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -333,6 +349,7 @@ export const cards: Record<string, Card> = {
 			title: 'Clearinghouse',
 			faction_id: 'weyland_consortium',
 			card_type_id: 'asset',
+			influence_cost: 3,
 			latest_printing_id: '30061',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -353,6 +370,7 @@ export const cards: Record<string, Card> = {
 			title: 'Conduit',
 			faction_id: 'shaper',
 			card_type_id: 'program',
+			influence_cost: 4,
 			latest_printing_id: '30024',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -373,6 +391,7 @@ export const cards: Record<string, Card> = {
 			title: 'Creative Commission',
 			faction_id: 'shaper',
 			card_type_id: 'event',
+			influence_cost: 2,
 			latest_printing_id: '30020',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -393,6 +412,7 @@ export const cards: Record<string, Card> = {
 			title: 'Devadatta Drone',
 			faction_id: 'shaper',
 			card_type_id: 'program',
+			influence_cost: 1,
 			latest_printing_id: '35031',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -413,6 +433,7 @@ export const cards: Record<string, Card> = {
 			title: 'Docklands Pass',
 			faction_id: 'criminal',
 			card_type_id: 'hardware',
+			influence_cost: 2,
 			latest_printing_id: '30013',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -433,6 +454,7 @@ export const cards: Record<string, Card> = {
 			title: 'Doomscroll',
 			faction_id: 'nbn',
 			card_type_id: 'ice',
+			influence_cost: 2,
 			latest_printing_id: '35063',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -453,6 +475,7 @@ export const cards: Record<string, Card> = {
 			title: 'DZMZ Optimizer',
 			faction_id: 'shaper',
 			card_type_id: 'hardware',
+			influence_cost: 2,
 			latest_printing_id: '30022',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -473,6 +496,7 @@ export const cards: Record<string, Card> = {
 			title: 'Echelon',
 			faction_id: 'shaper',
 			card_type_id: 'program',
+			influence_cost: 1,
 			latest_printing_id: '30025',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -493,6 +517,7 @@ export const cards: Record<string, Card> = {
 			title: 'Embedded Reporting',
 			faction_id: 'nbn',
 			card_type_id: 'agenda',
+			influence_cost: null,
 			latest_printing_id: '35059',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -513,6 +538,7 @@ export const cards: Record<string, Card> = {
 			title: 'Empiricist',
 			faction_id: 'jinteki',
 			card_type_id: 'ice',
+			influence_cost: 3,
 			latest_printing_id: '35052',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -533,6 +559,7 @@ export const cards: Record<string, Card> = {
 			title: 'Fermenter',
 			faction_id: 'anarch',
 			card_type_id: 'program',
+			influence_cost: 2,
 			latest_printing_id: '30007',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -553,6 +580,7 @@ export const cards: Record<string, Card> = {
 			title: 'Flyswatter',
 			faction_id: 'neutral_corp',
 			card_type_id: 'ice',
+			influence_cost: 0,
 			latest_printing_id: '35079',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -573,6 +601,7 @@ export const cards: Record<string, Card> = {
 			title: 'Funhouse',
 			faction_id: 'nbn',
 			card_type_id: 'ice',
+			influence_cost: 2,
 			latest_printing_id: '30054',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -593,6 +622,7 @@ export const cards: Record<string, Card> = {
 			title: 'GAMEDRAGON™ Pro',
 			faction_id: 'shaper',
 			card_type_id: 'hardware',
+			influence_cost: 2,
 			latest_printing_id: '35027',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -613,6 +643,7 @@ export const cards: Record<string, Card> = {
 			title: 'Gourmand',
 			faction_id: 'anarch',
 			card_type_id: 'program',
+			influence_cost: 2,
 			latest_printing_id: '35007',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -633,6 +664,7 @@ export const cards: Record<string, Card> = {
 			title: 'Government Subsidy',
 			faction_id: 'weyland_consortium',
 			card_type_id: 'operation',
+			influence_cost: 1,
 			latest_printing_id: '30064',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -653,6 +685,7 @@ export const cards: Record<string, Card> = {
 			title: 'Greenmail',
 			faction_id: 'weyland_consortium',
 			card_type_id: 'agenda',
+			influence_cost: null,
 			latest_printing_id: '35070',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -673,6 +706,7 @@ export const cards: Record<string, Card> = {
 			title: 'Hansei Review',
 			faction_id: 'jinteki',
 			card_type_id: 'operation',
+			influence_cost: 1,
 			latest_printing_id: '30048',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -693,6 +727,7 @@ export const cards: Record<string, Card> = {
 			title: 'Hedge Fund',
 			faction_id: 'neutral_corp',
 			card_type_id: 'operation',
+			influence_cost: 0,
 			latest_printing_id: '30075',
 			card_cycle_ids: ['system_gateway', 'system_core_2019', 'revised_core_set', 'core_set'],
 			latest_printing_images: {
@@ -713,6 +748,7 @@ export const cards: Record<string, Card> = {
 			title: 'Humanoid Resources',
 			faction_id: 'haas_bioroid',
 			card_type_id: 'asset',
+			influence_cost: 2,
 			latest_printing_id: '35039',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -733,6 +769,7 @@ export const cards: Record<string, Card> = {
 			title: 'IP Enforcement',
 			faction_id: 'nbn',
 			card_type_id: 'operation',
+			influence_cost: 5,
 			latest_printing_id: '35066',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -753,6 +790,7 @@ export const cards: Record<string, Card> = {
 			title: 'Jailbreak',
 			faction_id: 'neutral_runner',
 			card_type_id: 'event',
+			influence_cost: 0,
 			latest_printing_id: '30028',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -773,6 +811,7 @@ export const cards: Record<string, Card> = {
 			title: 'Karunā',
 			faction_id: 'jinteki',
 			card_type_id: 'ice',
+			influence_cost: 2,
 			latest_printing_id: '30047',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -793,6 +832,7 @@ export const cards: Record<string, Card> = {
 			title: 'Kessleroid',
 			faction_id: 'weyland_consortium',
 			card_type_id: 'ice',
+			influence_cost: 1,
 			latest_printing_id: '35075',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -813,6 +853,7 @@ export const cards: Record<string, Card> = {
 			title: 'Key Performance Indicators',
 			faction_id: 'weyland_consortium',
 			card_type_id: 'operation',
+			influence_cost: 2,
 			latest_printing_id: '35077',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -833,6 +874,7 @@ export const cards: Record<string, Card> = {
 			title: '“Knickknack” O’Brian',
 			faction_id: 'shaper',
 			card_type_id: 'resource',
+			influence_cost: 3,
 			latest_printing_id: '35033',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -853,6 +895,7 @@ export const cards: Record<string, Card> = {
 			title: 'Leech',
 			faction_id: 'anarch',
 			card_type_id: 'program',
+			influence_cost: 1,
 			latest_printing_id: '30008',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -873,6 +916,7 @@ export const cards: Record<string, Card> = {
 			title: 'LEO Construction: Labor Solutions',
 			faction_id: 'haas_bioroid',
 			card_type_id: 'corp_identity',
+			influence_cost: null,
 			latest_printing_id: '35035',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -894,6 +938,7 @@ export const cards: Record<string, Card> = {
 			title: 'Lie Low',
 			faction_id: 'criminal',
 			card_type_id: 'event',
+			influence_cost: 1,
 			latest_printing_id: '35015',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -914,6 +959,7 @@ export const cards: Record<string, Card> = {
 			title: 'Longevity Serum',
 			faction_id: 'jinteki',
 			card_type_id: 'agenda',
+			influence_cost: null,
 			latest_printing_id: '30044',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -934,6 +980,7 @@ export const cards: Record<string, Card> = {
 			title: 'Luminal Transubstantiation',
 			faction_id: 'haas_bioroid',
 			card_type_id: 'agenda',
+			influence_cost: null,
 			latest_printing_id: '30036',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -954,6 +1001,7 @@ export const cards: Record<string, Card> = {
 			title: 'Madani',
 			faction_id: 'shaper',
 			card_type_id: 'hardware',
+			influence_cost: 3,
 			latest_printing_id: '35028',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -974,6 +1022,7 @@ export const cards: Record<string, Card> = {
 			title: 'Magdalene Keino-Chemutai: Cryptarchitect',
 			faction_id: 'shaper',
 			card_type_id: 'runner_identity',
+			influence_cost: null,
 			latest_printing_id: '35024',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -995,6 +1044,7 @@ export const cards: Record<string, Card> = {
 			title: 'Maglectric Rapid (748 Mod)',
 			faction_id: 'criminal',
 			card_type_id: 'hardware',
+			influence_cost: 2,
 			latest_printing_id: '35019',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1015,6 +1065,7 @@ export const cards: Record<string, Card> = {
 			title: 'Mahkota Langit Grid',
 			faction_id: 'neutral_corp',
 			card_type_id: 'upgrade',
+			influence_cost: 0,
 			latest_printing_id: '35082',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1035,6 +1086,7 @@ export const cards: Record<string, Card> = {
 			title: 'Maintenance Access',
 			faction_id: 'criminal',
 			card_type_id: 'event',
+			influence_cost: 3,
 			latest_printing_id: '35016',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1055,6 +1107,7 @@ export const cards: Record<string, Card> = {
 			title: 'Manegarm Skunkworks',
 			faction_id: 'haas_bioroid',
 			card_type_id: 'upgrade',
+			influence_cost: 3,
 			latest_printing_id: '30042',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -1075,6 +1128,7 @@ export const cards: Record<string, Card> = {
 			title: 'Marjanah',
 			faction_id: 'criminal',
 			card_type_id: 'program',
+			influence_cost: 1,
 			latest_printing_id: '30016',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -1095,6 +1149,7 @@ export const cards: Record<string, Card> = {
 			title: 'Mayfly',
 			faction_id: 'neutral_runner',
 			card_type_id: 'program',
+			influence_cost: 0,
 			latest_printing_id: '30032',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -1115,6 +1170,7 @@ export const cards: Record<string, Card> = {
 			title: 'Measured Response',
 			faction_id: 'weyland_consortium',
 			card_type_id: 'operation',
+			influence_cost: 4,
 			latest_printing_id: '35078',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1135,6 +1191,7 @@ export const cards: Record<string, Card> = {
 			title: 'Mercia B4LL4RD',
 			faction_id: 'haas_bioroid',
 			card_type_id: 'upgrade',
+			influence_cost: 2,
 			latest_printing_id: '35045',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1155,6 +1212,7 @@ export const cards: Record<string, Card> = {
 			title: 'MuslihaT: Multifarious Marketeer',
 			faction_id: 'criminal',
 			card_type_id: 'runner_identity',
+			influence_cost: null,
 			latest_printing_id: '35013',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1176,6 +1234,7 @@ export const cards: Record<string, Card> = {
 			title: 'Mutual Favor',
 			faction_id: 'criminal',
 			card_type_id: 'event',
+			influence_cost: 3,
 			latest_printing_id: '30011',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -1196,6 +1255,7 @@ export const cards: Record<string, Card> = {
 			title: 'N-Pot',
 			faction_id: 'nbn',
 			card_type_id: 'ice',
+			influence_cost: 2,
 			latest_printing_id: '35064',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1216,6 +1276,7 @@ export const cards: Record<string, Card> = {
 			title: 'Nanomanagement',
 			faction_id: 'haas_bioroid',
 			card_type_id: 'operation',
+			influence_cost: 4,
 			latest_printing_id: '35043',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1236,6 +1297,7 @@ export const cards: Record<string, Card> = {
 			title: 'Nebula Talent Management: Making Stars',
 			faction_id: 'nbn',
 			card_type_id: 'corp_identity',
+			influence_cost: null,
 			latest_printing_id: '35057',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1257,6 +1319,7 @@ export const cards: Record<string, Card> = {
 			title: 'Neurospike',
 			faction_id: 'jinteki',
 			card_type_id: 'operation',
+			influence_cost: 3,
 			latest_printing_id: '30049',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -1277,6 +1340,7 @@ export const cards: Record<string, Card> = {
 			title: 'Next Big Thing',
 			faction_id: 'nbn',
 			card_type_id: 'agenda',
+			influence_cost: null,
 			latest_printing_id: '35060',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1297,6 +1361,7 @@ export const cards: Record<string, Card> = {
 			title: 'Off the Books',
 			faction_id: 'weyland_consortium',
 			card_type_id: 'agenda',
+			influence_cost: null,
 			latest_printing_id: '35071',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1317,6 +1382,7 @@ export const cards: Record<string, Card> = {
 			title: 'Offworld Office',
 			faction_id: 'neutral_corp',
 			card_type_id: 'agenda',
+			influence_cost: 0,
 			latest_printing_id: '30067',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -1337,6 +1403,7 @@ export const cards: Record<string, Card> = {
 			title: 'Open Market',
 			faction_id: 'criminal',
 			card_type_id: 'resource',
+			influence_cost: 2,
 			latest_printing_id: '35022',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1357,6 +1424,7 @@ export const cards: Record<string, Card> = {
 			title: 'Orbital Superiority',
 			faction_id: 'neutral_corp',
 			card_type_id: 'agenda',
+			influence_cost: 0,
 			latest_printing_id: '30068',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -1377,6 +1445,7 @@ export const cards: Record<string, Card> = {
 			title: 'Overclock',
 			faction_id: 'neutral_runner',
 			card_type_id: 'event',
+			influence_cost: 0,
 			latest_printing_id: '30029',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -1397,6 +1466,7 @@ export const cards: Record<string, Card> = {
 			title: 'Palisade',
 			faction_id: 'neutral_corp',
 			card_type_id: 'ice',
+			influence_cost: 0,
 			latest_printing_id: '30072',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -1417,6 +1487,7 @@ export const cards: Record<string, Card> = {
 			title: 'Pennyshaver',
 			faction_id: 'criminal',
 			card_type_id: 'hardware',
+			influence_cost: 3,
 			latest_printing_id: '30014',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -1437,6 +1508,7 @@ export const cards: Record<string, Card> = {
 			title: 'Petty Cash',
 			faction_id: 'neutral_corp',
 			card_type_id: 'operation',
+			influence_cost: 0,
 			latest_printing_id: '35081',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1457,6 +1529,7 @@ export const cards: Record<string, Card> = {
 			title: 'Phật Gioan Baotixita',
 			faction_id: 'jinteki',
 			card_type_id: 'asset',
+			influence_cost: 4,
 			latest_printing_id: '35051',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1477,6 +1550,7 @@ export const cards: Record<string, Card> = {
 			title: 'Ping',
 			faction_id: 'nbn',
 			card_type_id: 'ice',
+			influence_cost: 2,
 			latest_printing_id: '30055',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -1497,6 +1571,7 @@ export const cards: Record<string, Card> = {
 			title: 'Predictive Planogram',
 			faction_id: 'nbn',
 			card_type_id: 'operation',
+			influence_cost: 1,
 			latest_printing_id: '30056',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -1517,6 +1592,7 @@ export const cards: Record<string, Card> = {
 			title: 'Principia',
 			faction_id: 'shaper',
 			card_type_id: 'program',
+			influence_cost: 1,
 			latest_printing_id: '35032',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1537,6 +1613,7 @@ export const cards: Record<string, Card> = {
 			title: 'Project Ingatan',
 			faction_id: 'haas_bioroid',
 			card_type_id: 'agenda',
+			influence_cost: null,
 			latest_printing_id: '35038',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1557,6 +1634,7 @@ export const cards: Record<string, Card> = {
 			title: 'Proprionegation',
 			faction_id: 'jinteki',
 			card_type_id: 'agenda',
+			influence_cost: null,
 			latest_printing_id: '35048',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1577,6 +1655,7 @@ export const cards: Record<string, Card> = {
 			title: "PT Untaian: Life's Building Blocks",
 			faction_id: 'jinteki',
 			card_type_id: 'corp_identity',
+			influence_cost: null,
 			latest_printing_id: '35047',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1598,6 +1677,7 @@ export const cards: Record<string, Card> = {
 			title: 'Red Team',
 			faction_id: 'criminal',
 			card_type_id: 'resource',
+			influence_cost: 2,
 			latest_printing_id: '30018',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -1618,6 +1698,7 @@ export const cards: Record<string, Card> = {
 			title: 'Regolith Mining License',
 			faction_id: 'neutral_corp',
 			card_type_id: 'asset',
+			influence_cost: 0,
 			latest_printing_id: '30071',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -1638,6 +1719,7 @@ export const cards: Record<string, Card> = {
 			title: 'Rising Tide',
 			faction_id: 'anarch',
 			card_type_id: 'program',
+			influence_cost: 2,
 			latest_printing_id: '35009',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1658,6 +1740,7 @@ export const cards: Record<string, Card> = {
 			title: 'Ritual',
 			faction_id: 'shaper',
 			card_type_id: 'event',
+			influence_cost: 2,
 			latest_printing_id: '35026',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1678,6 +1761,7 @@ export const cards: Record<string, Card> = {
 			title: 'Sang Kancil',
 			faction_id: 'criminal',
 			card_type_id: 'program',
+			influence_cost: 2,
 			latest_printing_id: '35020',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1698,6 +1782,7 @@ export const cards: Record<string, Card> = {
 			title: 'Scrounge',
 			faction_id: 'anarch',
 			card_type_id: 'event',
+			influence_cost: 1,
 			latest_printing_id: '35004',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1718,6 +1803,7 @@ export const cards: Record<string, Card> = {
 			title: 'Seamless Launch',
 			faction_id: 'haas_bioroid',
 			card_type_id: 'operation',
+			influence_cost: 2,
 			latest_printing_id: '30040',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -1738,6 +1824,7 @@ export const cards: Record<string, Card> = {
 			title: 'Semak-samun',
 			faction_id: 'jinteki',
 			card_type_id: 'ice',
+			influence_cost: 1,
 			latest_printing_id: '35054',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1758,6 +1845,7 @@ export const cards: Record<string, Card> = {
 			title: 'Send a Message',
 			faction_id: 'neutral_corp',
 			card_type_id: 'agenda',
+			influence_cost: 0,
 			latest_printing_id: '30069',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -1778,6 +1866,7 @@ export const cards: Record<string, Card> = {
 			title: 'Sericulture Expansion',
 			faction_id: 'jinteki',
 			card_type_id: 'agenda',
+			influence_cost: null,
 			latest_printing_id: '35049',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1798,6 +1887,7 @@ export const cards: Record<string, Card> = {
 			title: 'Spin Doctor',
 			faction_id: 'nbn',
 			card_type_id: 'asset',
+			influence_cost: 1,
 			latest_printing_id: '30053',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -1818,6 +1908,7 @@ export const cards: Record<string, Card> = {
 			title: 'Superconducting Hub',
 			faction_id: 'neutral_corp',
 			card_type_id: 'agenda',
+			influence_cost: 0,
 			latest_printing_id: '30070',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -1838,6 +1929,7 @@ export const cards: Record<string, Card> = {
 			title: 'Sure Gamble',
 			faction_id: 'neutral_runner',
 			card_type_id: 'event',
+			influence_cost: 0,
 			latest_printing_id: '30030',
 			card_cycle_ids: ['system_gateway', 'system_core_2019', 'revised_core_set', 'core_set'],
 			latest_printing_images: {
@@ -1858,6 +1950,7 @@ export const cards: Record<string, Card> = {
 			title: 'Syailendra',
 			faction_id: 'weyland_consortium',
 			card_type_id: 'ice',
+			influence_cost: 3,
 			latest_printing_id: '35076',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1878,6 +1971,7 @@ export const cards: Record<string, Card> = {
 			title: 'T400 Memory Diamond',
 			faction_id: 'neutral_runner',
 			card_type_id: 'hardware',
+			influence_cost: 0,
 			latest_printing_id: '30031',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -1898,6 +1992,7 @@ export const cards: Record<string, Card> = {
 			title: 'Telework Contract',
 			faction_id: 'shaper',
 			card_type_id: 'resource',
+			influence_cost: 2,
 			latest_printing_id: '30027',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -1918,6 +2013,7 @@ export const cards: Record<string, Card> = {
 			title: 'The Zwicky Group: Invisible Hands',
 			faction_id: 'weyland_consortium',
 			card_type_id: 'corp_identity',
+			influence_cost: null,
 			latest_printing_id: '35069',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -1939,6 +2035,7 @@ export const cards: Record<string, Card> = {
 			title: 'Tithe',
 			faction_id: 'neutral_corp',
 			card_type_id: 'ice',
+			influence_cost: 0,
 			latest_printing_id: '30073',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -1959,6 +2056,7 @@ export const cards: Record<string, Card> = {
 			title: 'Tomorrowʼs Headline',
 			faction_id: 'nbn',
 			card_type_id: 'agenda',
+			influence_cost: null,
 			latest_printing_id: '30052',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -1979,6 +2077,7 @@ export const cards: Record<string, Card> = {
 			title: 'Topan: Ormas Leader',
 			faction_id: 'anarch',
 			card_type_id: 'runner_identity',
+			influence_cost: null,
 			latest_printing_id: '35002',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -2000,6 +2099,7 @@ export const cards: Record<string, Card> = {
 			title: 'Transfer of Wealth',
 			faction_id: 'criminal',
 			card_type_id: 'event',
+			influence_cost: 4,
 			latest_printing_id: '35017',
 			card_cycle_ids: ['elevation'],
 			latest_printing_images: {
@@ -2020,6 +2120,7 @@ export const cards: Record<string, Card> = {
 			title: 'Tread Lightly',
 			faction_id: 'criminal',
 			card_type_id: 'event',
+			influence_cost: 1,
 			latest_printing_id: '30012',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -2040,6 +2141,7 @@ export const cards: Record<string, Card> = {
 			title: 'Unity',
 			faction_id: 'shaper',
 			card_type_id: 'program',
+			influence_cost: 2,
 			latest_printing_id: '30026',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -2060,6 +2162,7 @@ export const cards: Record<string, Card> = {
 			title: 'Urtica Cipher',
 			faction_id: 'jinteki',
 			card_type_id: 'asset',
+			influence_cost: 2,
 			latest_printing_id: '30045',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -2080,6 +2183,7 @@ export const cards: Record<string, Card> = {
 			title: 'Verbal Plasticity',
 			faction_id: 'neutral_runner',
 			card_type_id: 'resource',
+			influence_cost: 0,
 			latest_printing_id: '30034',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -2100,6 +2204,7 @@ export const cards: Record<string, Card> = {
 			title: 'Whitespace',
 			faction_id: 'neutral_corp',
 			card_type_id: 'ice',
+			influence_cost: 0,
 			latest_printing_id: '30074',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {
@@ -2120,6 +2225,7 @@ export const cards: Record<string, Card> = {
 			title: 'Wildcat Strike',
 			faction_id: 'anarch',
 			card_type_id: 'event',
+			influence_cost: 1,
 			latest_printing_id: '30002',
 			card_cycle_ids: ['system_gateway'],
 			latest_printing_images: {

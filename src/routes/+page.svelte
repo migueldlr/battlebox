@@ -3,6 +3,8 @@
 	import * as Carousel from '$lib/components/ui/carousel';
 	import CardImage from '$lib/components/ui/card-image/card-image.svelte';
 	import type { PageData } from './$types';
+	import DecklistView from '$lib/components/DecklistView.svelte';
+	import { cards as allCards } from '$lib/types/cards';
 
 	let { data }: { data: PageData } = $props();
 
@@ -27,17 +29,16 @@
 	>
 </p>
 
-<h3 class="mb-1">Choose a deck:</h3>
 <Carousel.Root setApi={(emblaApi) => (api = emblaApi)} opts={{ loop: true }} class="-mx-2 mb-4">
 	<Carousel.Content>
-		{#each data.decklistData as { attributes, cards }, index (attributes.name)}
+		{#each data.decklistData as decklist, index (decklist.attributes.name)}
 			<Carousel.Item
 				class="basis-4/5 cursor-pointer transition-opacity md:basis-75 {activeIndex === index
 					? 'opacity-100'
 					: 'opacity-50'}"
 				onclick={() => api?.scrollTo(index)}
 			>
-				<CardImage card={cards.find((card) => card.id === attributes.identity_card_id)!} />
+				<CardImage card={allCards[decklist.attributes.identity_card_id]} />
 			</Carousel.Item>
 		{/each}
 	</Carousel.Content>
@@ -50,20 +51,8 @@
 		>
 		- {selectedDecklist.attributes.tagline}
 	</h3>
+	<DecklistView decklist={selectedDecklist} {allCards} />
 	{#if selectedDecklist.attributes.notes}
 		<div class="notes">{@html selectedDecklist.attributes.notes}</div>
 	{/if}
-	<div class="card-grid">
-		{#each selectedDecklist.cards.filter((card) => card.id !== selectedDecklist.attributes.identity_card_id) as card (card.id)}
-			<CardImage {card} />
-		{/each}
-	</div>
 </section>
-
-<style>
-	.card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-		gap: 0.75rem;
-	}
-</style>
