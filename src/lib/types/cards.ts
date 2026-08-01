@@ -54,7 +54,8 @@ export const cards: Record<string, Card> = {
 			card_type_id: 'asset',
 			influence_cost: 2,
 			latest_printing_id: '35072',
-			card_cycle_ids: ['elevation']
+			card_cycle_ids: ['elevation'],
+			notes: 'The best time to rez this is before the start of your turn'
 		}
 	},
 	azimat: {
@@ -881,7 +882,8 @@ export const cards: Record<string, Card> = {
 			card_type_id: 'operation',
 			influence_cost: 0,
 			latest_printing_id: '35081',
-			card_cycle_ids: ['elevation']
+			card_cycle_ids: ['elevation'],
+			notes: "Don't forget you can still play this even if it's in Archives"
 		}
 	},
 	phat_gioan_baotixita: {
@@ -1099,7 +1101,9 @@ export const cards: Record<string, Card> = {
 			card_type_id: 'asset',
 			influence_cost: 1,
 			latest_printing_id: '30053',
-			card_cycle_ids: ['system_gateway']
+			card_cycle_ids: ['system_gateway'],
+			notes:
+				'Can fix agenda flood by overdrawing then shuffling agendas from Archives back into R&D. Can also be used to bluff an agenda in a scoring remote.'
 		}
 	},
 	superconducting_hub: {

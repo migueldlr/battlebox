@@ -3,12 +3,10 @@
 	import type { Card } from '$lib/types/netrunnerdb';
 	import { CARD_TYPE_ORDER } from '$lib/utils';
 	import InfluencePips from './InfluencePips.svelte';
-	import FactionIcon from '$lib/icons/FactionIcon.svelte';
-	import CardImage from './ui/card-image/card-image.svelte';
 	import { openCardModal } from './card-modal/cardModalState.svelte';
 	let { decklist, allCards }: { decklist: Decklist; allCards: Record<string, Card> } = $props();
 
-	let open = $state(true);
+	let open = $state(false);
 
 	const idFaction = $derived(decklist.attributes.faction_id);
 
