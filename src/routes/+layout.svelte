@@ -5,7 +5,10 @@
 	let { children } = $props();
 </script>
 
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
+<svelte:head>
+	<title>The Netrunner Core Battle Box</title>
+	<link rel="icon" href={favicon} />
+</svelte:head>
 <div class="mx-auto my-4 px-2 md:max-w-[65ch] md:px-4 lg:px-8">
 	{@render children()}
 </div>
